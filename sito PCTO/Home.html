@@ -11,6 +11,16 @@ ul {
 	  top: 0;
 	}
 
+.topnav a{
+	width: 100%;
+}
+
+.dropdown-contento {
+  display: none;
+  position: absolute;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+  z-index: 1;
+}
 .dropdown:hover .dropdown-contento {
   display: block;
 }
@@ -21,17 +31,6 @@ li a, .dropdown {
   color: white;
   text-align: center;
   font-size: 20px;
-}
-
-.dropdown-contento {
-  display: none;
-  position: absolute;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
-  z-index: 1;
-}
-
-.dropdown:hover .dropdown-contento {
-  display: block;
 }
 
 .dropdown-contento a {
@@ -57,7 +56,7 @@ li a, .dropbtn {
 	  display: inline-block;
 	  color: white;
 	  text-align: center;
-	  padding: 14px 16px;
+	  padding: 2px 16px;
 	  text-decoration: none;
 	  width: 100px;
 	  align-content: center;
@@ -85,32 +84,24 @@ li.dropdown {display: inline-block;}
         
 		<ul class="topnav">
 		  <li><img src="./img/LOGO.png" width="100">
-		  <li><a class="active" href="#home">Home</a></li>
-		  <li><a href="#news">Rocce magmatiche</a></li>
-		  <li><a href="#contact">Rocce sedimentarie</a></li>
-		  <li class="right"><a href="#about">Rocce metamorfiche</a></li>
-		  		<ul>
-      <li><a class="active" href="./home.html">Home</a></li>
-        <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">Rocce magmatiche</a>
-    <div class="dropdown-contento">
-      <a href="./contents1.html">Diorite</a>
-      <a href="./contents2.html">Porfirite</a>
-      <a href="./contents3.html">Sienite</a>
-	 
-    </div>
-	<div class="dropdown-contento">
-	 <a href="javascript:void(0)" class="dropbtn">Rocce sedimentarie</a>
-	  <a href="./contents1.html">Ardesia</a>
-      <a href="./contents2.html">Marmo</a>
-      <a href="./contents3.html">Fillade</a>
-	  </div>
-	  <div class="dropdown-contento">
-	    <a href="javascript:void(0)" class="dropbtn">Rocce metamorfiche</a>
-	  <a href="./contents1.html">Travertino</a>
-      <a href="./contents2.html">Selce</a>
-      <a href="./contents3.html">Dolomia</a>
-	  </div>
+		  <li class="dropdown"><a class="active" href="#home">Home</a>
+
+		  </li>
+		  <li class="dropdown"><a href="#news">Rocce magmatiche</a>
+				<div class="dropdown-contento">
+				      <a href="./contents1.html">Diorite</a>
+				      <a href="./contents2.html">Porfirite</a>
+				      <a href="./contents3.html">Sienite</a>
+    		</div>
+		  </li>			
+		  <li class="dropdown"><a href="javascript:void(0)" class="dropbtn">Rocce sedimentarie</a>
+		  <div class="dropdown-contento">
+				<a href="javascript:void(0)" class="dropbtn">Rocce sedimentarie</a>
+			  <a href="./contents1.html">Ardesia</a>
+		    <a href="./contents2.html">Marmo</a>
+		    <a href="./contents3.html">Fillade</a>
+			</div>
+      </li>
 		</ul>
 		</div>
 		<hr/>
