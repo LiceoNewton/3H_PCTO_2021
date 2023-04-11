@@ -34,17 +34,16 @@ ul.menu{
     list-style-type: none;
 }
 
-<style>
 
 border-style=8pt;
 border-color=black;
 .dropdown:hover .dropdown-contento {
   display: block;
+}
 
 
 
-
-li a, .dropdown {
+li, a .dropdown {
 	background-color:	#787878;
   display: inline-block;
   color: white;
@@ -74,14 +73,14 @@ li a, .dropdown {
 
 }
 
-	li {
+li {
   float: left;
   
   border-right: 1px solid #4d4d4d;
   border-left: 1px solid #4d4d4d;
 }
 
-li a, .dropbtn {
+li, a .dropbtn {
 	  font-family: Product Sans;
 	  font-style: normal;
 	  display: inline-block;
@@ -106,9 +105,3 @@ li.dropdown {display: inline-block;}
 
 
 
-
-</style>
-
-<style>
-
-  
