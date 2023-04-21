@@ -1,80 +1,5 @@
 <!DOCTYPE html>
-<style>
-ul {
-	  list-style-type: none;
-	  margin: 0;
-	  padding: 0;
-	  overflow: hidden;
-	  background-color:	#787878;
-	  border-radius: 10px 10px 0px 0px;
-	  margin:0px;
-	  top: 0;
-	}
 
-.topnav a{
-	width:100%;
-}
-
-.dropdown-contento {
-  display: none;
-  position: absolute;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
-  z-index: 1;
-}
-.dropdown:hover .dropdown-contento {
-  display: block;
-}
-
-li a, .dropdown {
-	background-color:	#787878;
-  display: inline-block;
-  color: white;
-  width: 20%;
-  text-align: center;
-  font-size: 20px;
-}
-
-.dropdown-contento a {
-  color: white;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-  font-size: 16px;
-
-}
-
-	li {
-  float: left;
-  
-  border-right: 1px solid #4d4d4d;
-  border-left: 1px solid #4d4d4d;
-}
-
-li a, .dropbtn {
-	  font-family: Product Sans;
-	  font-style: normal;
-	  display: inline-block;
-	  color: white;
-	  text-align: center;
-	  padding: 2px 16px;
-	  text-decoration: none;
-	  width: 100px;
-	  align-content: center;
-	}
-
-li a:hover, .dropdown:hover .dropbtn {
-  background-color:#4d4d4d;
-  transition-duration: 0.5s;
-}
-
-li.dropdown {display: inline-block;}
-
-.active{
-	background-color: #4d4d4d; 
-}
-
-</style>
 
 <html>
 	<head>
@@ -84,12 +9,12 @@ li.dropdown {display: inline-block;}
 	<body background="./img/Sfondo2.jpg"style="background-size:cover;">
        
 		<ul class="topnav">
-		  <li><img src="./img/LOGO.png" width="100">
-		  <li class="dropdown"><a class="active" href="Home.html">Rocce magmatiche</a>
+		  <li><img id="logo" src="./img/LOGO.png" width="100">
+		  <li class="dropdown"><a href="Home.html">Home</a>
 
 		  </li>
 		  
-		  <li class="dropdown"><a >Rocce magmatiche</a>
+		  <li class="dropdown"><a class="active" >Rocce magmatiche</a>
 				<div class="dropdown-contento">
 				<a href="magmatiche.html" class="dropbtn">Indice magmatiche</a>
 				      

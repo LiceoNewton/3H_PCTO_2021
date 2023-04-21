@@ -1,80 +1,6 @@
 <!DOCTYPE html>
 <html>
-<style>
-ul {
-	  list-style-type: none;
-	  margin: 0;
-	  padding: 0;
-	  overflow: hidden;
-	  background-color:	#787878;
-	  margin:0px;
-	  top: 0;
-	}
 
-.topnav a{
-	width: 100%;
-}
-
-.dropdown-contento {
-  display: none;
-  position: absolute;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
-  z-index: 1;
-}
-.dropdown:hover .dropdown-contento {
-  display: block;
-}
-
-li a, .dropdown {
-	background-color:	#787878;
-  display: inline-block;
-  color: white;
-  width: 20%;
-  text-align: center;
-  font-size: 20px;
-}
-
-.dropdown-contento a {
-  color: white;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-  font-size: 16px;
-
-}
-
-	li {
-  float: left;
-  
-  border-right: 1px solid #4d4d4d;
-  border-left: 1px solid #4d4d4d;
-}
-
-li a, .dropbtn {
-	  font-family: Product Sans;
-	  font-style: normal;
-	  display: inline-block;
-	  color: white;
-	  text-align: center;
-	  padding: 2px 16px;
-	  text-decoration: none;
-	  width: 100px;
-	  align-content: center;
-	}
-
-li a:hover, .dropdown:hover .dropbtn {
-  background-color:#4d4d4d;
-  transition-duration: 0.5s;
-}
-
-li.dropdown {display: inline-block;}
-
-.active{
-	background-color: #4d4d4d; 
-}
-
-</style>
 
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -82,7 +8,7 @@ li.dropdown {display: inline-block;}
 	</head>
 	<body  background="./img/Sfondo1.jpg"style="background-size:cover;"> 
 		<ul class="topnav">
-		  <li><img src="./img/LOGO.png" style="padding-left: 20px;padding-right: 20px;"width="100">
+		  <li><img id="logo" src="./img/LOGO.png" width="100">
 		  <li class="dropdown"><a class="active" href="Home.html">Home</a>
 
 		  </li>
@@ -109,13 +35,17 @@ li.dropdown {display: inline-block;}
 		</ul>
 		</div>
 	    <center>
-		<div style="padding:0 0px;">
+	    	<h2 style="font-size:1000%; font-family:math;color:white; margin: 5px;">ROCCE</h2>
+		<div style="padding:0 0px; background-color: #00000060;">
 		
-		  <h2 style="font-size:1000%; font-family:math;color:white; margin: 5px;">ROCCE</h2>
-		  <p style= "font-size:200%; color:white;margin: 300px;">Questo sito realizzato come pcto dalla classe 5H 2022/23
+		  
+		  <p style= "font-size:200%; color:white;">Questo sito realizzato come pcto dalla classe 5H 2022/23
 		  , si pone come obbiettivo quello di classificare e descrivere le caratteristiche delle rocce
 		  presenti nell'isitituto liceo Newton.
 		  Le rocce sono descritte secondo le loro caratteristiche fisico-chimiche,la provenienza e la loro formazione.</p>
+		</div>
+
+		  <div style="min-height: 300px;"> </div>
 		  <footer style= "background-color:black;color:white; position: relative;padding: 30px;bottom:0;whidt:100%;"><p> Realizzato dalla 5H anno 2022/23 liceo Newton</p>
 		  </footer>
 		  
